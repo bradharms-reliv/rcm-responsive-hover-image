@@ -1,0 +1,27 @@
+<div>
+    <a href="{{config.href}}">
+        <img id="responsiveHoverImageImage{{id}}"
+             src="{{config.src}}"
+             alt="{{config.alt}}"
+             style="width:100%">
+    </a>
+</div>
+<script>
+    window.rcmResponsiveHoverImageInit = function (imageElement, src, hoverSrc) {
+        if (!hoverSrc) {//HoverSrc is optional. If it is empty, don't bother with hover logic
+            return;
+        }
+        imageElement.addEventListener('mouseover', function () {
+            this.src = hoverSrc;
+        });
+        imageElement.addEventListener('mouseout', function () {
+            this.src = src;
+        });
+    };
+
+    window.rcmResponsiveHoverImageInit(
+            document.getElementById('responsiveHoverImageImage{{id}}'),
+            '{{config.src}}',
+            '{{config.hoverSrc}}'
+    );
+</script>

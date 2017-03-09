@@ -1,0 +1,36 @@
+{
+  "name": "RcmResponsiveHoverImage",
+  "category": "Common",
+  "label": "Responsive Hover Image",
+  "description": "Responsive image with alt description that changes when hovering",
+  "renderer": "mustache",
+  "icon": "",
+  "cache": true,
+  "editor": "field-dialog",
+  "fields": [
+    {
+      "name": "src",
+      "type": "image",
+      "label": "Normal Image",
+      "default": "//static.reliv.com/art/WebStuff/Products/US/standard/Classic-web.jpg"
+    },
+    {
+      "name": "hoverSrc",
+      "type": "image",
+      "label": "Image to show when hovering (optional)",
+      "default": "//static.reliv.com/art/WebStuff/Products/US/standard/Now-web.jpg"
+    },
+    {
+      "name": "href",
+      "type": "url",
+      "label": "Link to go to when image is clicked",
+      "default": "https://reliv.com"
+    },
+    {
+      "name": "alt",
+      "type": "text",
+      "label": "Image \"alt\" description that search engines and blind people see",
+      "default": ""
+    }
+  ]
+}
