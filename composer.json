@@ -1,6 +1,6 @@
 {
     "name": "rcm/responsive-hover-image",
     "description": "RCM block that provides a responsive image that can change when hovering over it. Also allows the image to be a link.",
-    "license": "BSD",
+    "license": "ISC",
     "require": {}
 }
