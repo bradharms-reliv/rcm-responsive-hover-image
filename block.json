@@ -2,11 +2,11 @@
   "name": "RcmResponsiveHoverImage",
   "category": "Common",
   "label": "Responsive Hover Image",
-  "description": "Responsive image with alt description that changes when hovering",
+  "description": "Responsive image with alt description that changes when hovering, plus optional rich content footer",
   "renderer": "mustache",
   "icon": "",
   "cache": true,
-  "editor": "field-dialog",
+  "editor": "react-field-dialog",
   "fields": [
     {
       "name": "src",
@@ -31,6 +31,13 @@
       "type": "text",
       "label": "Image \"alt\" description that search engines and blind people see",
       "default": ""
+    },
+    {
+      "name": "footerContent",
+      "label": "Footer Content",
+      "type": "richEdit",
+      "default": "",
+      "required": false
     }
   ]
 }
