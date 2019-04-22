@@ -1,10 +1,10 @@
 <div>
-    <a href="{{config.href}}">
+    {{#config.href}}<a href="{{config.href}}">{{/config.href}}
         <img id="responsiveHoverImageImage{{id}}"
              src="{{config.src}}"
              alt="{{config.alt}}"
              style="width:100%">
-    </a>
+    {{#config.href}}</a>{{/config.href}}
 </div>
 <script>
     window.rcmResponsiveHoverImageInit = function (imageElement, src, hoverSrc) {
